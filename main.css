@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Karantina:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+button,
+input {
+    bottom: 0;
+    outline: 0;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+body {
+    height: 2000px;
+    background: #999;
+}
+
+/* header */
+
+.header {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.header__nav {
+    padding: 20px 0;
+}
+
+.header__nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__link {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12vw;
+    font-family: "Karantina", cursive;
+    background: linear-gradient(180.16deg, #FFFFFF 11.43%, rgba(244, 244, 244, 0.82) 56.41%, rgba(232, 232, 232, 0.61) 65.16%, rgba(217, 217, 217, 0) 84.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    z-index: -2;
+    top: 18%;
+    transition: 0.4s;
+}
+
+.header__image {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s;
+    object-fit: cover;
+    transform: scale(1.5);
+}
+
+._sky {
+    z-index: -3;
+}
+
+._rock {
+    bottom: 0;
+    transition: 0.4s;
+}
+
+/* header */
